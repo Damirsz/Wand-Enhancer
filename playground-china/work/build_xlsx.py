@@ -7,6 +7,7 @@ import importlib.util
 import json
 import os
 import re
+import sys
 
 from openpyxl import Workbook
 from openpyxl.styles import Alignment, Font
@@ -16,6 +17,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 OUT = os.path.join(ROOT, "suppliers.xlsx")
 
+sys.dont_write_bytecode = True
 spec = importlib.util.spec_from_file_location("merge", os.path.join(HERE, "merge.py"))
 merge = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(merge)
