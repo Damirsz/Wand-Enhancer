@@ -223,6 +223,29 @@ def dedupe(recs):
     return [merge_group(g) for g in groups.values()]
 
 
+def apply_overrides(merged):
+    """Apply curated values from work/overrides.json (lead review) on top of merged records."""
+    path = os.path.join(HERE, "overrides.json")
+    if not os.path.exists(path):
+        return merged
+    with open(path, encoding="utf-8") as f:
+        overrides = json.load(f)
+    for ov in overrides:
+        key = ov["match"]
+        hits = [m for m in merged if norm_en(m.get("name_en")) == norm_en(key) or norm_cn(m.get("name_cn")) == norm_cn(key)]
+        if len(hits) != 1:
+            print(f"WARN override '{key}' matched {len(hits)} records", file=sys.stderr)
+            continue
+        hits[0].update(ov["set"])
+    return merged
+
+
+def build():
+    merged = apply_overrides(dedupe(load()))
+    merged.sort(key=lambda m: (-(m["similarity"] or 0), m.get("name_en") or m.get("name_cn") or ""))
+    return merged
+
+
 def flatten(m):
     row = {}
     for key, _ in FIELDS:
@@ -237,8 +260,7 @@ def flatten(m):
 
 def main():
     recs = load()
-    merged = dedupe(recs)
-    merged.sort(key=lambda m: (-(m["similarity"] or 0), m.get("name_en") or m.get("name_cn") or ""))
+    merged = build()
     fd, tmp = tempfile.mkstemp(dir=HERE, suffix=".csv")
     with os.fdopen(fd, "w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f, lineterminator="\n")

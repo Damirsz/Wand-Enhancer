@@ -1,0 +1,92 @@
+[
+  {
+    "match": "Kaiqi Group Co., Ltd.",
+    "set": {
+      "similarity": 5,
+      "landline": "+86-21-67849999 (Шанхайский маркетинговый центр)",
+      "tower_evidence": "KQ24031A 'Same Frequency / 同频律动' (chinaplayground.com, в URL 'Multiple Towering Pagodas'): Size 3870X2550X1850 CM, Use Zone 4270X2950 CM — несколько башен, связанных сетками, по рендеру выше 8 м, спиральные горки, панели; KQ24033A 'Tall Tower' 高塔商城乐园: Specification 2900*1600*1190CM (11,9 м), длинные горки; Bee Theme — 8,3 м с нерж. горкой. Проверено лично 2026-10-07 по карточкам и картинкам.",
+      "tower_examples": [
+        "https://www.chinaplayground.com/kaiqi-new-2024-playground-equipment-multiple-towering-pagodas-are-connected-skyscrapin-net-product/",
+        "https://kaiqi-toy.en.made-in-china.com/product/nAtUpaSVqMho/China-Kaiqi-Tall-Tower-Outdoor-Playground-with-Large-Slides.html",
+        "https://www.chinaplayground.com/play-equipment-with-tube-slide-and-high-tower-for-children-to-play-on-outdoor-playground-product/",
+        "https://kaiqi-toy.en.made-in-china.com/product/YdBGCrhTCXaW/China-Kaiqi-Planet-Theme-Customized-Children-Outdoor-Playground-Equipment-with-Stainless-Steel-Slide.html"
+      ],
+      "hpl_evidence": "MIC: ~20 позиций HPL-серии ('Kaiqi Kq24271e HPL Outdoor Amusement Equipment' — 'Material: HPL', 'HDPE or HPL sheet with thickness 18mm') https://kaiqi-toy.en.made-in-china.com/product/WGnUuhmrvZck/China-Kaiqi-Kq24271e-HPL-Outdoor-Amusement-Equipment-Child ; chinaplayground.com JMJ-H1-B002: 'HPL (High-pressure Laminate) with thickness of 18mm'",
+      "comment": "Один из крупнейших заводов Цяося (с 1995, 363 сотр. по MIC, 600 по сайту). Есть всё, что нужно: многобашенный комплекс KQ24031A (башни выше 8 м по рендеру, сетки, спиральные горки, панели), отдельная башня 11,9 м (KQ24033A), HPL-серия (лист 18 мм), нержавеющие и пластиковые горки, EN1176/TÜV/GS. Был на RAAPA 2025 в Москве, член CAAPA. Оговорка: высокие комплексы показаны рендерами каталога, фото построенных объектов с такими высотами не найдено; стиль современный, не лесной."
+    }
+  },
+  {
+    "match": "Cowboy Group(Guangdong)Industrial Co., Ltd.",
+    "set": {
+      "similarity": 4,
+      "tower_evidence": "Giant London Tower MT0188: Dimensions (L*W*H) 2907*977*1288 CM — главная башня 12,9 м со спиральной трубной горкой + 2 малые башни, канатные мосты, 'All the protection board were made by compact board'; Danali Peak MT-01123: 1265*1065*654 CM — 3 башни с крышами, 3 горки (спиральные трубные), 'Protection board is made by compact laminate board'; Rocket Tower MT0295: 1429*688*666 cm; Jungle Tower (3 towers) MT0088: 1800*1140*620 cm. Проверено лично 2026-10-07 по карточкам и картинкам.",
+      "tower_examples": [
+        "https://cowboytoys.en.made-in-china.com/product/ZPnRmEUysJWO/China-Giant-London-Tower-Children-s-Playground-Equipment-for-Outdoor-Park-with-2-Slides.html",
+        "https://cowboytoys.en.made-in-china.com/product/KYORyUoDMdhl/China-Danali-Peak-Large-Kids-Playground-with-Multi-Tower-Spiral-Tube-Slides.html",
+        "https://cowboytoys.en.made-in-china.com/product/cGdRaKArvVYU/China-Jungle-Adventure-Kids-Outdoor-Multi-Tower-Forest-Themed-Playground-Equipment.html",
+        "https://cowboytoys.en.made-in-china.com/product/PwbTIqtkrjWo/China-Nature-Play-Children-Outdoor-Play-Equipmen-Jungle-Tower-with-3-towers-.html"
+      ],
+      "hpl": "да",
+      "hpl_evidence": "compact laminate (= HPL): Danali Peak — 'Protection board is made by compact laminate board' https://cowboytoys.en.made-in-china.com/product/KYORyUoDMdhl/China-Danali-Peak-Large-Kids-Playground-with-Multi-Tower-Spiral-Tube-Slides.html ; London Tower — 'All the protection board were made by compact board'",
+      "comment": "Ближайший к Buglo по типологии и материалам: Danali Peak — 3 башни с крышами, 3 спиральные трубные горки, панели compact laminate (как 1403, но 6,5 м); Giant London Tower — башня 12,9 м + малые башни на канатных мостах. Крупный завод (MIC Audited, 4 производственные базы, рег. капитал 130 млн RMB, с 2003). До 5 не хватает подтверждения нескольких башен ≥8 м в одном комплексе."
+    }
+  },
+  {
+    "match": "YONGLANG GROUP CO., LTD",
+    "set": {
+      "similarity": 4,
+      "comment": "YL26910 'Popular High Tower' 820×990×870 см — башня-домик 8,7 м с панелями и двухсекционной трубной горкой: визуально ближайший аналог Buglo 1401 (проверено по картинке). Sky Castle 1760×1415×720 см — несколько башен с мостами (7,2 м). HPL-линейка (видео HPL-башни на металлокаркасе), EN1176/ASTM, член IPEMA, TÜV; завод с 1993 (55 000 м², 300+ сотр.). Минус: нет мобильного и контактного лица — только офис 0577, WhatsApp и email."
+    }
+  },
+  {
+    "match": "Huadong Entertainment Equipment Co., Ltd.",
+    "set": {
+      "similarity": 4,
+      "tower_evidence": "MIC 'Transnational Series Tower Climbing Rope Net Observation Deck...' HD-HKG009-23106: Specification 2340*2200*900cm; 'Transnational Series Rope Net Observation Tower Rainbow Color...': 1800*1760*920cm — несколько башен, канатная башня-обсерватория, много спиральных трубных горок. По рендерам 9,0–9,2 м — габарит вместе со шпилем, сами площадки ниже (проверено лично 2026-10-07).",
+      "comment": "Старый крупный завод Цяося (с 1987 по сайту / 1996 по MIC, 211–300+ сотр., Audited Supplier, участвовал в разработке нацстандарта). Многобашенные комплексы с канатной башней и множеством спиральных трубных горок, 非标定制. Стиль 'пластиковый' (ротоформ LLDPE), HPL не подтверждён; высота 9 м — со шпилем. Полные контакты (моб./WhatsApp, 0577, 400, email)."
+    }
+  },
+  {
+    "match": "Guangzhou Kira Amusement Equipment Co., Ltd",
+    "set": {
+      "comment": "Специализация — высокие каркасные башни-аттракционы (水晶塔): Panda Tower ~14 м (3,5 этажа) с нержавеющими горками и сетками, по СМИ — башня 29,8 м. Есть проект в РФ (крытый парк 600 м², 2021). Стиль — верёвочно-сетчатые башни-экспедиции, HPL не заявлен → 4. Завод в Хуаду (11 000 м², с 2015)."
+    }
+  },
+  {
+    "match": "Nanjing Pegasus Recreation Equipment Co., Ltd.",
+    "set": {
+      "comment": "Крупный нанкинский завод (бренд Cheer Amusement, 467 сотр., TÜV-аудит MIC). Уличные adventure-парки со структурами до 20 м и курортные нержавеющие горки до 20 м, но основной профиль — indoor/FEC; HPL-башен типа Buglo не видно → 4 условно. Казахстан (DALA MALL, slide-парк 6 000 м²) — только по выдержкам поиска, страницы сайта не открылись: нужна перепроверка."
+    }
+  },
+  {
+    "match": "Shanghai JEGOPLAY Facilities Group Co., Ltd.",
+    "set": {
+      "comment": "Шанхайская design-build группа: кастомные тематические башни-горки из нержавейки 7,5–25 м (Toffy's Lunar Airship 47,6×10,3×25 м, Bird's Nest 39×37×16 м), канатные сети; свой завод 10 000 м² (~200 сотр.). Был на RAAPA 2025 и ParkSeason 2026 (Москва), член CAAPA. Стиль скульптурный (не HPL-стойки) → 4, но сильный кандидат под нестандарт."
+    }
+  },
+  {
+    "match": "Guangdong Family of Childhood Industrial Co., Ltd.",
+    "set": {
+      "comment": "Завод в Цинъюане (MIC: 144 сотр., рег. капитал 30,08 млн RMB) с HPL-серией (Space/Ocean, до 5,2 м) и ротоформными трубными горками. Регулярно выставляется в Москве (RAAPA 2023, ParkSeason 2025–2026). Башен ≥6 м не найдено → 3."
+    }
+  },
+  {
+    "match": "ZZRS Amusement Equipment Co., Ltd.",
+    "set": {
+      "towers_6m": "нет",
+      "comment": "Завод Цяося (MIC: 84 сотр., 2013; история с 1999). Замок Caesar Castle 770×470×650 см — 6,5 м только за счёт шпилей, площадки до 2,4 м; лесная башня-домик 5,5 м с закрытой трубной горкой; HPL-модели (по листингам Alibaba). Явно работает с 非标 (FAQ: 35–55 дней). → 3."
+    }
+  },
+  {
+    "match": "Wenzhou J&Bell Amusement Equipment Co., Ltd",
+    "set": {
+      "comment": "Небольшой завод Цяося (с 2016): нестандартные уличные площадки и нержавеющие горки под ключ (проект + производство + монтаж). Был на RAAPA 2025 в Москве (как 'Wenzhou IN.BELL'). Высоты башен не найдены → 3. Много прямых контактов (2 менеджера, WeChat)."
+    }
+  },
+  {
+    "match": "Nanjing Wande Sports Industry Group Co., Ltd.",
+    "set": {
+      "comment": "Крупный старый завод (с 1986, соавтор нацстандартов, рег. капитал 100 млн RMB по CNPP). Серия 'Tower Playground' с площадью до 27×16 м, сетки, ротоформные горки; высота башен не указана, панели дерево/пластик, HPL не заявлен → 3 до получения каталога. Main Markets включают Eastern Europe."
+    }
+  }
+]

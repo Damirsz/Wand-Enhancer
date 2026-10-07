@@ -155,16 +155,25 @@ def write_cell(ws, r, c, value, kind):
     return s
 
 
+SPLIT_HEADERS = {"Контактное лицо", "Должность", "Мобильный", "Стационарный", "WeChat", "Email", "QQ", "WhatsApp", "Сайт"}
+
+
+def display_width(line):
+    return sum(2 if ord(ch) >= 0x2E80 else 1 for ch in line)
+
+
 def write_table(ws, headers_kinds, rows):
-    widths = [len(h) for h, _ in headers_kinds]
+    widths = [display_width(h) for h, _ in headers_kinds]
     for c, (h, _) in enumerate(headers_kinds, 1):
         cell = ws.cell(row=1, column=c, value=h)
         cell.font = FONT_BOLD
         cell.alignment = Alignment(vertical="top", wrap_text=False)
     for r, row in enumerate(rows, 2):
         for c, ((h, kind), v) in enumerate(zip(headers_kinds, row), 1):
+            if h in SPLIT_HEADERS and isinstance(v, str):
+                v = re.sub(r"\s*;\s*", "\n", v.strip())
             s = write_cell(ws, r, c, v, kind)
-            longest = max((len(line) for line in s.split("\n")), default=0)
+            longest = max((display_width(line) for line in s.split("\n")), default=0)
             widths[c - 1] = max(widths[c - 1], min(longest, MAX_W.get(kind, 60)))
     for c, w in enumerate(widths, 1):
         ws.column_dimensions[get_column_letter(c)].width = max(8, w + 2)
@@ -177,8 +186,7 @@ def key_of(m):
 
 
 def main():
-    merged = merge.dedupe(merge.load())
-    merged.sort(key=lambda m: (-(m["similarity"] or 0), m.get("name_en") or m.get("name_cn") or ""))
+    merged = merge.build()
 
     shortlist_path = os.path.join(HERE, "shortlist.json")
     shortlist = []
