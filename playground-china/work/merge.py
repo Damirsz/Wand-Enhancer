@@ -66,7 +66,8 @@ SUFFIX_RE = re.compile(
 
 
 def norm_en(s):
-    s = (s or "").lower().replace("&", "and")
+    s = re.sub(r"\(.*?\)|（.*?）", " ", s or "")
+    s = s.lower().replace("&", "and")
     s = re.sub(r"[^a-z0-9 ]+", " ", s)
     s = re.sub(r"\s+", " ", s).strip()
     prev = None
