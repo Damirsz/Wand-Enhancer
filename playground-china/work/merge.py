@@ -240,7 +240,7 @@ def main():
     merged.sort(key=lambda m: (-(m["similarity"] or 0), m.get("name_en") or m.get("name_cn") or ""))
     fd, tmp = tempfile.mkstemp(dir=HERE, suffix=".csv")
     with os.fdopen(fd, "w", encoding="utf-8-sig", newline="") as f:
-        w = csv.writer(f)
+        w = csv.writer(f, lineterminator="\n")
         w.writerow([h for _, h in FIELDS])
         for m in merged:
             row = flatten(m)
